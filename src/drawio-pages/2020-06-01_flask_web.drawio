@@ -1,0 +1,601 @@
+<mxfile host="" modified="2020-06-17T16:41:41.904Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.46.0 Chrome/78.0.3904.130 Electron/7.3.1 Safari/537.36" etag="XPBEDCk_Q04VRvGXySPm" version="13.1.3">
+    <diagram id="6hGFLwfOUW9BJ-s0fimq" name="Page-1">
+        <mxGraphModel dx="4078" dy="2291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="58" target="61" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-697.5" y="1240" width="230" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="22" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-557.5" y="1090" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-722.5" y="710" width="280" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="64" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;h1&gt;Flask 로 웹 배우기&lt;/h1&gt;&lt;p&gt;아래 강좌는 flask 를 통해 웹의 생태계를 파악하기 쉽로록 만든 가이드 이다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="220" width="340" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="167" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="웹의 전체적인 스택을 보고싶거나 다른방식으로 배우고싶다면 다음 가이드를 참고하길 바란다." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="350" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;h1&gt;웹 이란?&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-747.5" y="220" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;h1&gt;만들것&lt;/h1&gt;&lt;p&gt;flask 를 사용해 간단한 메모장 사이트를 만들어보고 어떤식으로 동작하는지 알아보자.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-747.5" y="385" width="250" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="9" target="22" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;h1&gt;동작 정의&lt;/h1&gt;&lt;p&gt;무언가를 만들기 전에 동작을 한번 정리하고 가자&lt;/p&gt;&lt;p&gt;우리가 만들것은 메모장 사이트로 사용자가 접속해서 메모를 추가 제거 열람 을 할 수 있는 서비스를 만들 것 이다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-747.5" y="520" width="330" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;font color=&quot;#000000&quot;&gt;사용자&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="-682.5" y="840" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="메모 생성" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-562.5" y="730" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="메모 열람" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-562.5" y="810" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="메모 제거" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-562.5" y="970" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="메모 편집" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-562.5" y="890" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="위 내용들이 사용자가 할 수 있는 행동들 이다." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-705" y="1020" width="245" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="24" target="43" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="24" target="58" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="&lt;h1&gt;역할 정하기&lt;/h1&gt;&lt;p&gt;다음은 위의 행동을 구현하기 위해서 누가 무엇을 담당할 것인지 분류할 것 이다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-697.5" y="1110" width="230" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;font color=&quot;#000000&quot;&gt;사용자&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="-657.5" y="1250" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="메모 생성" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-682.5" y="1350" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="메모 열람" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-682.5" y="1400" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="메모 제거" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-682.5" y="1500" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="메모 편집" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-682.5" y="1450" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="&lt;h1&gt;웹의 형태&lt;/h1&gt;&lt;p&gt;하지만 아직 일을 할당할 수 있는 누군가가 있는지 확인하지 못했다. 이를 정의하기위해서 잠깐 웹을 짚고 넘어가자&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-332.5" y="1110" width="335" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.07;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="46" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;font color=&quot;#000000&quot;&gt;사용자&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="-320" y="1240" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.13;exitY=0.77;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="47" target="46" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.88;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" parent="1" source="47" target="48" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="인터넷" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-232" y="1230" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=0.96;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="48" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="서버" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="-70" y="1230" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="서버" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="-552.5" y="1250" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="메모 저장" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-562.5" y="1350" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="메모 탐색" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-562.5" y="1400" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="메모 삭제" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-562.5" y="1500" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="메모 수정" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-562.5" y="1450" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="&lt;h1&gt;각각의 기능 정리하기&lt;/h1&gt;&lt;p&gt;각각의 기능을 정리해서 어떻게 구현할 것 인지 설계한다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-750" y="1650" width="335" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="240" target="66" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="695" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="240" target="65" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="&lt;h1&gt;flask 시작 프로젝트 만들기&lt;/h1&gt;&lt;p&gt;flask 는 공식적으로 두가지 틀이 있다.&lt;/p&gt;&lt;p&gt;두가지 방식의 구현적인 부분의 차이는 없지만 실행방식에 조금 차이가 있다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="370" width="340" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="65" target="85">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="&lt;h1&gt;factory 방식&lt;/h1&gt;&lt;p&gt;이 방식은 app 을 생성하는 함수를 만들고 flask 커맨드로 실행함수를 잡아서 실행하는 구조이다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="890" y="730" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="64" target="240" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="687.5" y="689.9999999999998" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="&lt;h1&gt;app 방식&lt;/h1&gt;&lt;p&gt;이 방식은 app.run 을 통해서 서버를 실행한다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="730" width="190" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="66" target="73" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="687.5" y="860" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="73" target="78" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="&lt;h1&gt;개발버젼 실행&lt;/h1&gt;&lt;p&gt;flask 는 실시간으로 수정사항이 적용되는 개발버젼 실행을 제공한다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="940" width="330" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="74" target="84" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="760" y="1360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="74" value="&lt;h1&gt;프로덕션 배포&lt;/h1&gt;&lt;p&gt;flask 는 개발버젼 만으로는 배포될 수 없다. 이에대한 글이 있다.&lt;/p&gt;&lt;p&gt;따라서 배포를 위한 방법을 응용해야 한다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="1200" width="360" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="78" target="74" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="```bash&lt;br&gt;export FLASK_APP=hello.py&lt;br&gt;flask run&lt;br&gt;```" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="605" y="1060" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="다른 글..." style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="1365" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="85" target="87" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="85" target="86" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="&lt;h1&gt;메모장 만들기&lt;/h1&gt;&lt;p&gt;flask 로 메모장은 만들기위해선 클라이언트와 서버간에 어떻게 정보가 오고 갈 것인지 설계하는것이 중요하다&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1690" y="1130" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="86" target="124" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="&lt;h1&gt;서버 설계&lt;/h1&gt;&lt;p&gt;먼저 클라이언트와 서버간에 오고가는 프로토콜을 정의해보자 우리가 만들 앱은 메모장으로 사용자가 로그인하고 메모를 조회, 추가, 제거, 편집을 할 수 있다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1975" y="1380" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="87" target="121" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="&lt;h1&gt;시나리오 설계&lt;/h1&gt;&lt;p&gt;앱을 만들때는 사용자의 시나리오를 고려하면 설계가 편해진다. 우리가만들 메모장앱은 사용자가 웹사이트에 접속해 로그인하고 로그인하면 메모 목록이뜨고 조회, 수정, 삭제, 생성할 수 있다. UI 는 삼성 메모를 따라간다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1425" y="1380" width="190" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="1250" y="1600" width="540" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="122" vertex="1">
+                    <mxGeometry width="540" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="122" vertex="1">
+                    <mxGeometry x="10" y="30" width="120" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="122" vertex="1">
+                    <mxGeometry x="30" y="95" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="122" vertex="1">
+                    <mxGeometry x="30" y="125" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="로그인 페이지" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="122" vertex="1">
+                    <mxGeometry x="10" y="10" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="Login" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="122" vertex="1">
+                    <mxGeometry x="50" y="160" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="122" vertex="1">
+                    <mxGeometry x="200" y="30" width="120" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="로그인" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="122" source="88" target="95" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="목록 페이지" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="122" vertex="1">
+                    <mxGeometry x="200" y="10" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="122" vertex="1">
+                    <mxGeometry x="200" y="30" width="20" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="노트1&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22850%22%20y%3D%221510%22%20width%3D%22120%22%20height%3D%22190%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22870%22%20y%3D%221575%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%224%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22870%22%20y%3D%221605%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%225%22%20value%3D%22%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%22%20style%3D%22text%3Bhtml%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22850%22%20y%3D%221490%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%226%22%20value%3D%22Login%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dcenter%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22890%22%20y%3D%221640%22%20width%3D%2240%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" parent="122" vertex="1">
+                    <mxGeometry x="230" y="40" width="37.333333333333336" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="노트2&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22850%22%20y%3D%221510%22%20width%3D%22120%22%20height%3D%22190%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22870%22%20y%3D%221575%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%224%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22870%22%20y%3D%221605%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%225%22%20value%3D%22%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%22%20style%3D%22text%3Bhtml%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22850%22%20y%3D%221490%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%226%22%20value%3D%22Login%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dcenter%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22890%22%20y%3D%221640%22%20width%3D%2240%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%32&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" parent="122" vertex="1">
+                    <mxGeometry x="272.66666666666674" y="40" width="37.333333333333336" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="노트3&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22850%22%20y%3D%221510%22%20width%3D%22120%22%20height%3D%22190%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22870%22%20y%3D%221575%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%224%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22870%22%20y%3D%221605%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%225%22%20value%3D%22%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%22%20style%3D%22text%3Bhtml%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22850%22%20y%3D%221490%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%226%22%20value%3D%22Login%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dcenter%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22890%22%20y%3D%221640%22%20width%3D%2240%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" parent="122" vertex="1">
+                    <mxGeometry x="230" y="130" width="37.333333333333336" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="노트4&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22850%22%20y%3D%221510%22%20width%3D%22120%22%20height%3D%22190%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22870%22%20y%3D%221575%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%224%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22870%22%20y%3D%221605%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%225%22%20value%3D%22%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%22%20style%3D%22text%3Bhtml%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22850%22%20y%3D%221490%22%20width%3D%2280%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%226%22%20value%3D%22Login%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dcenter%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22890%22%20y%3D%221640%22%20width%3D%2240%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" parent="122" vertex="1">
+                    <mxGeometry x="272.66666666666674" y="130" width="37.333333333333336" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="122" vertex="1">
+                    <mxGeometry x="410" y="30" width="120" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="클릭" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="122" source="102" target="107" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="메모 페이지" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="122" vertex="1">
+                    <mxGeometry x="410" y="10" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="" style="endArrow=none;html=1;" parent="122" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="520" y="50" as="sourcePoint"/>
+                        <mxPoint x="420" y="50" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="116" value="" style="endArrow=none;html=1;" parent="122" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="520" y="59.99999999999977" as="sourcePoint"/>
+                        <mxPoint x="420" y="59.99999999999977" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="117" value="" style="endArrow=none;html=1;" parent="122" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="520" y="69.99999999999977" as="sourcePoint"/>
+                        <mxPoint x="420" y="69.99999999999977" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="122" source="119" target="107" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="생성" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;" parent="122" vertex="1">
+                    <mxGeometry x="290" y="190" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="140" target="124" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2080" y="1470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="140" value="&lt;h1&gt;REST API 프레임&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://spoqa.github.io/2013/06/11/more-restful-interface.html&quot;&gt;https://spoqa.github.io/2013/06/11/more-restful-interface.html&lt;/a&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="2244" y="1490" width="230" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="157" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="1830" y="1600" width="480" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="메모 생성" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="157" vertex="1">
+                    <mxGeometry width="480" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" value="메모 열람" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="157" vertex="1">
+                    <mxGeometry y="100" width="480" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="메모 제거" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="157" vertex="1">
+                    <mxGeometry y="150" width="480" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="메모 편집" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="157" vertex="1">
+                    <mxGeometry y="50" width="480" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="&lt;font color=&quot;#000000&quot;&gt;사용자&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" parent="157" vertex="1">
+                    <mxGeometry x="110" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="서버" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="157" vertex="1">
+                    <mxGeometry x="430" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="POST : 메모 생성" style="endArrow=classic;html=1;" parent="157" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="139" y="10" as="sourcePoint"/>
+                        <mxPoint x="419" y="10" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="136" value="GET : 메모 요청" style="endArrow=classic;html=1;" parent="157" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="109.66000000000008" as="sourcePoint"/>
+                        <mxPoint x="420" y="109.66000000000008" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="137" value="PUT : 메모 수정" style="endArrow=classic;html=1;" parent="157" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="59.66000000000008" as="sourcePoint"/>
+                        <mxPoint x="420" y="59.66000000000008" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="138" value="DELETE : 메모 삭제" style="endArrow=classic;html=1;" parent="157" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="159.66000000000008" as="sourcePoint"/>
+                        <mxPoint x="420" y="159.66000000000008" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="145" value="생성 결과" style="endArrow=classic;html=1;" parent="157" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="420" y="29.829999999999927" as="sourcePoint"/>
+                        <mxPoint x="140" y="29.829999999999927" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="146" value="서버" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="157" vertex="1">
+                    <mxGeometry x="430" y="50" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="147" value="&lt;font color=&quot;#000000&quot;&gt;사용자&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" parent="157" vertex="1">
+                    <mxGeometry x="110" y="50" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="148" value="수정 결과" style="endArrow=classic;html=1;" parent="157" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="420" y="79.30999999999995" as="sourcePoint"/>
+                        <mxPoint x="140" y="79.30999999999995" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="150" value="서버" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="157" vertex="1">
+                    <mxGeometry x="430" y="100" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" value="서버" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="157" vertex="1">
+                    <mxGeometry x="430" y="150" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="152" value="&lt;font color=&quot;#000000&quot;&gt;사용자&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" parent="157" vertex="1">
+                    <mxGeometry x="110" y="100" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="&lt;font color=&quot;#000000&quot;&gt;사용자&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" parent="157" vertex="1">
+                    <mxGeometry x="110" y="150" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="154" value="메모 내용" style="endArrow=classic;html=1;" parent="157" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="420" y="130" as="sourcePoint"/>
+                        <mxPoint x="140" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="155" value="삭제 결과" style="endArrow=classic;html=1;" parent="157" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="420" y="180" as="sourcePoint"/>
+                        <mxPoint x="140" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="161" value="&lt;h1&gt;UI 만들기&lt;/h1&gt;&lt;p&gt;flask 는 jinja 라는 UI 프레임워크를 기본으로 지원한다. 하지만 이번 글에서 jinja 의 기능까지 설명하면 이해하기 힘듦으로 순수한 html 과 javascript, css 로만 UI 를 구성할것이다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1420" y="1910" width="210" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="169" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="162" target="168" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="162" value="&lt;h1&gt;서버 만들기&lt;/h1&gt;&lt;p&gt;flask 에서 위에서 정의한 기능들을 사용할 수 있도록 만들어 줄 것 이다.&amp;nbsp;&lt;/p&gt;&lt;p&gt;각각의 요청 및 응답은 http 프로토콜을 통해서 이루어 진다. 이런 요청들을 처리해 줄 수 있는것이 바로 flask 이다. flask 를 비롯한 여러 http 프로토콜을 처리해주는 프레임워크는 '라우팅' 이라는 기능을 가지고있는데&amp;nbsp; '라우팅' 이란 위에서 정의한것처럼 각각의 요청에따라 원하는 응답을 할 수 있도록 요청을 보내주는것을 말한다. flask 에서는 @app.route() 로 라우팅을 할 수 있다.&lt;/p&gt;&lt;p&gt;그럼 위 4가지 요청을 받을 수 있도록 라우팅을 설정해보자&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1872.5" y="1870" width="395" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="121" target="161" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="164" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="126" target="162" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="165" target="64" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="165" value="&lt;h1&gt;[공식] Quick Start&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://flask.palletsprojects.com/en/1.1.x/quickstart/&quot;&gt;https://flask.palletsprojects.com/en/1.1.x/quickstart/&lt;/a&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="258" y="230" width="280" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="167" value="&lt;h1&gt;웹개발자 로드맵&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/kamranahmedse/developer-roadmap&quot; style=&quot;text-align: center&quot;&gt;https://github.com/kamranahmedse/developer-roadmap&lt;/a&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1118" y="440" width="304" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="168" target="170" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="168" value="```python&lt;br&gt;from flask import Flask&lt;br&gt;app = flask(__name__)&lt;br&gt;&lt;br&gt;@app.route('/create_memo', methods=['POST'])&lt;br&gt;def create_memo():&lt;br&gt;&amp;nbsp; &amp;nbsp; return 'create_memo'&lt;br&gt;&lt;br&gt;@app.route('/get_memo', methods=['GET'])&lt;br&gt;def get_memo():&lt;br&gt;&amp;nbsp; &amp;nbsp; return 'get memo'&lt;br&gt;&lt;br&gt;@app.route('/edit_memo', methods=['PUT'])&lt;br&gt;def edit_memo():&lt;br&gt;&amp;nbsp; &amp;nbsp; return 'edit memo'&lt;br&gt;&lt;br&gt;@app.route('/delete_memo', methods=['DELETE'])&lt;br&gt;def delete_memo():&lt;br&gt;&amp;nbsp; &amp;nbsp; return 'delete memo'&lt;br&gt;&lt;br&gt;if __name__ = &quot;__main__&quot;:&lt;br&gt;&amp;nbsp; &amp;nbsp; app.run()&lt;br&gt;```" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1926" y="2120" width="288" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="173" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="170" target="172" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.4;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="170" target="174" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="170" value="&lt;h1&gt;라우팅 테스트 하기&lt;/h1&gt;&lt;p&gt;이렇게 라우팅이 완료되었다.&lt;/p&gt;&lt;p&gt;말도안되게 쉬웠으므로 이게 정말 동작하는지 테스트 해보려고 한다. 하지만 웹 브라우져 에서는 POST 나 PUT, DELETE 와 같은 메소드는 테스트가 불가능 하다. 따라서 임시로 요청을 생성하고 응답을 받을 수 있는 무언가가 필요한데 여기서는 Postman 을 사용하겠다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1945" y="2500" width="250" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="172" value="&lt;h1&gt;Postman 이란?&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://meetup.toast.com/posts/107&quot;&gt;https://meetup.toast.com/posts/107&lt;/a&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="2300" y="2550" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="174" target="176" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="174" value="대충 &lt;br&gt;postman 가지고 &lt;br&gt;테스트하는 짤" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2010" y="2710" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="212" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="176" target="205" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="213" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="176" target="201" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="214" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="176" target="189" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="215" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="176" target="186" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="176" value="&lt;h1&gt;각 요청에 대한 세부기능 작성하기&lt;/h1&gt;&lt;p&gt;사용자 요청에 따라 정확하게 라우팅 되는것을 확인했다. 다음은 어떤 데이터를 반환할것인지 정의하고 세부 내용을 작성할것이다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1934" y="2830" width="385" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="184" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="179" target="181" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="216" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="179" target="176" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="179" value="&lt;h1&gt;http 요청 및 응답의 구조&lt;/h1&gt;&lt;p&gt;위에 명시되어있는 기능을 구현하기위해 서버와 클라이언트 사이에 주고받는 정보가 있을것이다. 이 정보는 다양한 프로토콜을 사용하여 전달할 수 있지만 실시간 처리가 필요하거나 동기화작업이 필요한 프로세스를 제외하고는 간단한 http 프로토콜을 사용한다. http 통신은 기본적으로 `요청-응답` 구조를 띄고있으며 각각의 요청 및 응답은 헤더와 바디로 이루어져 있다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="2740" y="2790" width="280" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="181" value="&lt;h1&gt;http 구조에 관한 글&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/HTTP/Messages&quot;&gt;https://developer.mozilla.org/ko/docs/Web/HTTP/Messages&lt;/a&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="2740" y="3050" width="330" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="179" target="179" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="183" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="179" target="179" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="224" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="186" target="218" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="186" value="&lt;h1&gt;create_memo&lt;/h1&gt;&lt;p&gt;메모를 생성하는 기능이다. 이 요청을 받으면 서버는 요청으로 들어온 메모를 저장한다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1380" y="3050" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="187" value="요청&lt;br&gt;메모 작성자&lt;br&gt;메모 날자&lt;br&gt;메모 내용" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1380" y="3180" width="74" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="188" value="응답&lt;br&gt;메모 저장 성공 여부" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1518" y="3180" width="112" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="225" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="189" target="219" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="189" value="&lt;h1&gt;get_memo&lt;/h1&gt;&lt;p&gt;메모를 가져오는 기능이다. 메모 리스트를 가져오거나 각각의 메모 내용을 가져오는것이 가능하다&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1752.5" y="3050" width="275" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="190" value="요청&lt;br&gt;메모 리스트 요청" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1757.5" y="3180" width="95" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="191" value="응답&lt;br&gt;메모 목록" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1928" y="3180" width="112" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="193" value="요청&lt;br&gt;메모 내용 요청" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1757.5" y="3260" width="95" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="194" value="응답&lt;br&gt;메모 내용" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1928" y="3260" width="112" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="196" value="&#10;&#10;&lt;!--StartFragment--&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(42, 42, 42); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;localhost/create_memo&lt;/span&gt;&lt;!--EndFragment--&gt;&#10;&#10;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1350" y="3160" width="130" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="197" value="localhost/get_memo?from=0&amp;amp;to=10" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1707.5" y="3140" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="198" value="localhost/get_memo?id=102902" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1705" y="3240" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="199" target="176" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="199" value="&lt;h1&gt;URL 과 리소스&lt;/h1&gt;&lt;div&gt;http 통신을 사용하면서 url 을 많이 사용하게 될 것이다. 이 url 에도 많은 정보가 들어있는데 이름 참고하면 url 을 설계하는데 많은 도움이 될 것이다.&lt;/div&gt;&lt;p&gt;&lt;a href=&quot;https://feel5ny.github.io/2019/08/09/HTTP_002/&quot;&gt;https://feel5ny.github.io/2019/08/09/HTTP_002/&lt;/a&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="2740" y="2610" width="300" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="226" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="201" target="220" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="201" value="&lt;h1&gt;edit_memo&lt;/h1&gt;&lt;p&gt;메모를 수정하는 기능이다. 이 요청은 create_memo 과 같은 기능으로 볼 수 있지만 기존 메모를 삭제하는 과정이 추가된다.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="2120" y="3050" width="250" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="202" value="요청&lt;br&gt;메모 작성자&lt;br&gt;메모 날자&lt;br&gt;메모 내용" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="2120" y="3190" width="74" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="203" value="응답&lt;br&gt;메모 수정 성공 여부" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="2258" y="3190" width="112" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="204" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; float: none ; display: inline&quot;&gt;localhost/edit_memo&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="2094" y="3150" width="130" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="227" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="205" target="221" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="205" value="&lt;h1&gt;delete_memo&lt;/h1&gt;&lt;p&gt;메모를 삭제한다!&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="2429" y="3050" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="206" value="요청&lt;br&gt;메모 삭제" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="2440" y="3170" width="74" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="207" value="응답&lt;br&gt;메모 삭제 성공 여부" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="2578" y="3170" width="112" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="208" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; float: none ; display: inline&quot;&gt;localhost/delete_memo?id=102902&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="2420" y="3140" width="198" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="217" value="```python&lt;br&gt;from flask import Flask&lt;br&gt;app = flask(__name__)&lt;br&gt;```" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1928" y="3430" width="288" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="218" value="```python&lt;br&gt;@app.route('/create_memo', methods=['POST'])&lt;br&gt;def create_memo():&lt;br&gt;&amp;nbsp; &amp;nbsp; # 대충 body 에서 json 가져오는 작업&lt;br&gt;&amp;nbsp; &amp;nbsp; # 대충 가져온 데이터를 데이터베이스에 넣는 작업&lt;br&gt;&amp;nbsp; &amp;nbsp; return 'create_memo'&lt;br&gt;```" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1928" y="3520" width="288" height="113" as="geometry"/>
+                </mxCell>
+                <mxCell id="219" value="```python&lt;br&gt;@app.route('/get_memo', methods=['GET'])&lt;br&gt;def get_memo():&lt;br&gt;&amp;nbsp; &amp;nbsp; if 대충 from to 가 있다면 그 리스트를 가져옴&lt;br&gt;&amp;nbsp; &amp;nbsp; if 대충 id 가 있다면 해당 메모의 내용을 가져옴&lt;br&gt;&amp;nbsp; &amp;nbsp; return 'get memo'&lt;br&gt;```" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1928" y="3650" width="288" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="220" value="```python&lt;br&gt;@app.route('/edit_memo', methods=['PUT'])&lt;br&gt;def edit_memo():&lt;br&gt;&amp;nbsp; &amp;nbsp; if 대충 메모가 존재하면 교체&lt;br&gt;&amp;nbsp; &amp;nbsp; else 대충 메모가 없으면 실패&lt;br&gt;&amp;nbsp; &amp;nbsp; return 'edit memo'&lt;br&gt;```" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1928" y="3770" width="288" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="221" value="```python&lt;br&gt;@app.route('/delete_memo', methods=['DELETE'])&lt;br&gt;def delete_memo():&lt;br&gt;&amp;nbsp; &amp;nbsp; if 대충 메모가 존재하면 삭제&lt;br&gt;&amp;nbsp; &amp;nbsp; else 없으면 실패&lt;br&gt;&amp;nbsp; &amp;nbsp; return 'delete memo'&lt;br&gt;```" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1928" y="3890" width="288" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="222" value="```python&lt;br&gt;if __name__ = &quot;__main__&quot;:&lt;br&gt;&amp;nbsp; &amp;nbsp; app.run()&lt;br&gt;```" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1928" y="4010" width="288" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="232" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="228" target="229" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="233" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="228" target="162" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="228" value="&lt;h1&gt;flask 듀토리얼 프로젝트 레이아웃&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://flask.palletsprojects.com/en/1.1.x/tutorial/layout/&quot;&gt;https://flask.palletsprojects.com/en/1.1.x/tutorial/layout/&lt;/a&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="2590" y="1770" width="376" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="229" value="&lt;div&gt;/home/user/Projects/flask-tutorial&lt;/div&gt;&lt;div&gt;├── flaskr/&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── __init__.py&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── db.py&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── schema.sql&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── auth.py&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── blog.py&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── templates/&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;├── base.html&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;├── auth/&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;├── login.html&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;└── register.html&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;└── blog/&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;├── create.html&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;├── index.html&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;└── update.html&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;└── static/&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;└── style.css&lt;/div&gt;&lt;div&gt;├── tests/&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── conftest.py&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── data.sql&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── test_factory.py&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── test_db.py&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── test_auth.py&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;└── test_blog.py&lt;/div&gt;&lt;div&gt;├── venv/&lt;/div&gt;&lt;div&gt;├── setup.py&lt;/div&gt;&lt;div&gt;└── MANIFEST.in&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="2681" y="1890" width="194" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="236" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="235" target="161" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="235" value="&lt;h1&gt;jinja2 기본 사용법&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://velog.io/@decody/-Flask-Template%EC%97%90-Jinja2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0&quot;&gt;https://velog.io/@decody/-Flask-Template%EC%97%90-Jinja2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0&lt;/a&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="1925" width="360" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="238" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="237" target="176">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="237" value="&lt;h1&gt;html form 에서 put 과 delete 메소드가 지원되지 않는 이유&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://haah.kr/2017/05/23/rest-http-method-in-html-form/&quot;&gt;http://haah.kr/2017/05/23/rest-http-method-in-html-form/&lt;/a&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1511" y="2700" width="340" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="240" value="```python&lt;br&gt;from flask import Flask&lt;br&gt;app = flask(__name__)&lt;br&gt;&lt;br&gt;@app.route('/')&lt;br&gt;def hello_world():&lt;br&gt;&amp;nbsp; &amp;nbsp; return 'Hello, World!'&lt;br&gt;&lt;br&gt;if __name__ = &quot;__main__&quot;:&lt;br&gt;&amp;nbsp; &amp;nbsp; app.run()&lt;br&gt;```" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="687.5" y="520" width="165" height="170" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
