@@ -1,6 +1,6 @@
-<mxfile host="" modified="2020-06-08T16:07:46.857Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.45.1 Chrome/78.0.3904.130 Electron/7.2.4 Safari/537.36" etag="WsHD94pFcBSHq1m-2wEH" version="13.1.3">
+<mxfile host="" modified="2020-06-22T16:52:47.624Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.46.1 Chrome/78.0.3904.130 Electron/7.3.1 Safari/537.36" etag="1KwZwRwRPCWr4JgOGupe" version="13.1.3">
     <diagram id="kqYTqFlFQi94klK8HHeB" name="Page-1">
-        <mxGraphModel dx="3251" dy="2291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2756" dy="984" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -145,6 +145,9 @@
                 </mxCell>
                 <mxCell id="66" value="&lt;h1&gt;jekyll, HUGO, Gatsby&lt;/h1&gt;&lt;p&gt;차이점&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1330" y="83.81" width="300" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="&lt;h1&gt;MarkDown 페이지 추가하기&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.org/docs/glossary/markdown/&quot;&gt;https://www.gatsbyjs.org/docs/glossary/markdown/&lt;/a&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1840" y="90" width="320" height="70" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
