@@ -1,16 +1,28 @@
+const newsletterFeed = require(`./src/utils/newsletterFeed`)
+
 require(`dotenv`).config({
   path: `.env`,
 })
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const feed = true
+const feedTitle = `Minimal Blog - @lekoarts/gatsby-theme-minimal-blog`
 
 module.exports = {
+  
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `UfXpri`,
+    siteTitleAlt: `UfXpri Blog - Gatsby Theme`,
+    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
+    siteUrl: `https://minimal-blog.lekoarts.de`,
+    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+    siteLanguage: `kr`,
+    siteImage: `/banner.jpg`,
+    author: `@UfXpri`,
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-minimal-blog`,
+      resolve: `@lekoarts/gatsby-theme-minimal-blog-core`,
       // See the theme's README for all available options
       options: {
         navigation: [
@@ -25,16 +37,20 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `facebook`,
+            url: `https://www.facebook.com/profile.php?id=100004942863140`,
           },
         ],
       },
     },
+    feed && {
+      resolve: `gatsby-plugin-feed`,
+      options: newsletterFeed(feedTitle),
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
