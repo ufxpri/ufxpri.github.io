@@ -1,4 +1,6 @@
 const newsletterFeed = require(`./src/utils/newsletterFeed`)
+const default_option = require(`./default-options`)
+const mdx = true
 
 require(`dotenv`).config({
   path: `.env`,
@@ -22,27 +24,48 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-minimal-blog-core`,
-      // See the theme's README for all available options
+      resolve: `gatsby-source-filesystem`,
       options: {
-        navigation: [
+        name: default_option.postsPath,
+        path: default_option.postsPath,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: default_option.pagesPath,
+        path: default_option.pagesPath,
+      },
+    },
+    mdx && {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
           {
-            title: `Blog`,
-            slug: `/blog`,
-          },
-          {
-            title: `About`,
-            slug: `/about`,
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              quality: 90,
+              linkImagesToOriginal: false,
+            },
           },
         ],
-        externalLinks: [
+        plugins: [
           {
-            name: `facebook`,
-            url: `https://www.facebook.com/profile.php?id=100004942863140`,
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              quality: 90,
+              linkImagesToOriginal: false,
+            },
           },
         ],
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-typescript`,
     feed && {
       resolve: `gatsby-plugin-feed`,
       options: newsletterFeed(feedTitle),

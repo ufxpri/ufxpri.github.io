@@ -8,28 +8,53 @@ import Listing from "./listing"
 import replaceSlashes from "../utils/replaceSlashes"
 import SEO from "./seo"
 
+// type TagProps = {
+//   posts: {
+//     slug: string
+//     title: string
+//     date: string
+//     excerpt: string
+//     description: string
+//     timeToRead?: number
+//     tags: {
+//       name: string
+//       slug: string
+//     }[]
+//   }[]
+//   pageContext: {
+//     isCreatedByStatefulCreatePages: boolean
+//     slug: string
+//     name: string
+//     [key: string]: any
+//   }
+// }
+
 type TagProps = {
-  posts: {
-    slug: string
-    title: string
-    date: string
-    excerpt: string
-    description: string
-    timeToRead?: number
-    tags: {
-      name: string
-      slug: string
-    }[]
-  }[]
+  data: {
+    allPost: {
+      nodes: {
+        slug: string,
+        title: string,
+        date: string,
+        excerpt: string,
+        description: string,
+        timeToRead: number,
+        tags: {
+          name: string,
+          slug: string
+        }[]
+      }[]
+    }
+  }
   pageContext: {
     isCreatedByStatefulCreatePages: boolean
     slug: string
     name: string
     [key: string]: any
   }
-}
+} 
 
-const Tag = ({ posts, pageContext }: TagProps) => {
+const Tag = ({ data:{allPost:{nodes}}, pageContext }: TagProps) => {
   const { tagsPath, basePath } = useMinimalBlogConfig()
 
   return (
@@ -41,7 +66,7 @@ const Tag = ({ posts, pageContext }: TagProps) => {
           View all tags
         </TLink>
       </Flex>
-      <Listing posts={posts} sx={{ mt: [4, 5] }} />
+      <Listing posts={nodes} sx={{ mt: [4, 5] }} />
     </Layout>
   )
 }

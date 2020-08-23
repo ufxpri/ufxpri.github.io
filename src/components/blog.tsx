@@ -8,22 +8,41 @@ import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
 import replaceSlashes from "../utils/replaceSlashes"
 import SEO from "./seo"
 
-type PostsProps = {
-  posts: {
-    slug: string
-    title: string
-    date: string
-    excerpt: string
-    description: string
-    timeToRead?: number
-    tags?: {
-      name: string
-      slug: string
-    }[]
-  }[]
-}
+// type PostsProps = {
+//   posts: {
+//     slug: string
+//     title: string
+//     date: string
+//     excerpt: string
+//     description: string
+//     timeToRead?: number
+//     tags?: {
+//       name: string
+//       slug: string
+//     }[]
+//   }[]
+// }
 
-const Blog = ({ posts }: PostsProps) => {
+type PostsProps = {
+  data: {
+    allPost: {
+      nodes: {
+        slug: string,
+        title: string,
+        date: string,
+        excerpt: string,
+        description: string,
+        timeToRead: number,
+        tags: {
+          name: string,
+          slug: string
+        }[]
+      }[]
+    }
+  }
+} 
+
+const Blog = ({data:{allPost:{nodes}}}: PostsProps) => {
   const { tagsPath, basePath } = useMinimalBlogConfig()
 
   return (
@@ -35,7 +54,7 @@ const Blog = ({ posts }: PostsProps) => {
           View all tags
         </TLink>
       </Flex>
-      <Listing posts={posts} sx={{ mt: [4, 5] }} />
+      <Listing posts={nodes} sx={{ mt: [4, 5] }} />
     </Layout>
   )
 }
