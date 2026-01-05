@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>개발 프로세스 on Minimal Blog</title><link>https://ufxpri.github.io/categories/%EA%B0%9C%EB%B0%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4/</link><description>Recent content in 개발 프로세스 on Minimal Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 05 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ufxpri.github.io/categories/%EA%B0%9C%EB%B0%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4/index.xml" rel="self" type="application/rss+xml"/><item><title>사내 협업 관리 툴 개선방안</title><link>https://ufxpri.github.io/posts/startup-collaboration-improvement/</link><pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate><guid>https://ufxpri.github.io/posts/startup-collaboration-improvement/</guid><description>&lt;h1 id="사내-협업-관리-툴-개선방안"&gt;사내 협업 관리 툴 개선방안&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;현재까지 회사에선 개발 프로세스 없이 프로젝트를 관리하고 소통하고 있었다. 이를 개선할 개선방안을 준비해야겠다고 생각했다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="현재까지의-작업-흐름"&gt;현재까지의 작업 흐름&lt;/h2&gt;
+&lt;h3 id="프로젝트-사이클"&gt;프로젝트 사이클&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;외부에서 요청이 들어옴&lt;/li&gt;
+&lt;li&gt;담당자 선정&lt;/li&gt;
+&lt;li&gt;작업&lt;/li&gt;
+&lt;li&gt;배포&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;사내에 프로젝트가 하나씩 생길때 마다 그 프로젝트의 담당자를 정하고 시간을 준 뒤 결과를 확인하는 방식이였다. 물론 현재까지의 프로젝트에서 다양한 기능이 포함되거나 복잡한 구조가 필요한 프로젝트는 없었지만 이 때문에 다른사람이 업무를 분담할 수 없게 되었고 그 결과 업무를 맡은 사람이 완성하지 못할 시 그 사람이 업무를 끝낼때 까지 아무도 도움을 주지 못한다는 것이다.&lt;/p&gt;</description></item></channel></rss>
