@@ -1,0 +1,66 @@
+CloudFront
+
+CDN이다.
+
+엣지로케이션에 컨텐츠를 저장하여 접근성을 높혀준다.
+전세계에 216개의 엣지로케이션이 있다.
+
+DDoS 보호또한 가능하다.
+
+
+Origins
+- S3 Bucket
+	- 파일 캐싱
+	- Origin Access Control (OAC) 를 통해 보안 강화 - Origin Access Identity (OAI) 를 대체한다.
+	- S3에 파일을 업로드 하는 등의 ingress 로써 사용할 수도 있다.
+- Custom Origin (HTTP)
+	- Application Load Balancer
+	- EC2 instance
+	- S3 website
+	- HTTP 기반의 모든 백엔드
+
+CloudFront 와 S3 Cross Region Replication 이 자주 비교되는데 차이점은 다음과 같다.
+- CloudFront
+	- 전세계의 216개나 되는 서버에서 배포된다.
+	- 캐싱 형식으로 파일이 저장된다.
+	- 정적 콘텐츠에 적합하다.
+- S3 Cross Region Replication
+	- 각 region 마다 설정해줘야 한다.
+	- 파일이 거의 실시간으로 업데이트 된다. 읽기 전용이다.
+	- 동적 콘텐츠에 적합하다.
+
+
+ ALB 를 원본으로 사용할 경우
+edge location에서 접근할 수 있도록 규칙을 허용해야함
+public 으로 설정되어있는 서비스만 설정 가능
+
+
+지리적 제한 설정
+접근 가능 및 불가능 목록을 설정 가능
+컨텐츠 저작권 등의 용도에 사용가능
+
+
+과금 정책
+엣지로케이션 마다 요금이 다르다.
+많이 사용할 수록 저렴하다.
+- Price Class ALL: 모든 리전
+- Price Class 200: 비싼곳을 제외한 리전
+- Price Class 100: 나머지 비싼 리전
+
+
+캐시 무효화
+가끔 원본을 바로 가져오고 싶은 데이터가 있을 수 있다.
+파일을 업데이트 했는데 edge location에 데이터가 여전히 남아있을 경우
+cache invalidations 를 사용하여 캐시 삭제를 원하는 path 를 넘겨주면
+해당 path에 있는 데이터킈 캐시가 지워지고 다음에 유저가 데이터를 요청할 때 새로운 원본 데이터를 캐싱하게 된다.
+
+
+AWS Global Accelerator
+사용자가 서버에 접근하려면 수많은 라우터를 거치게 된다.
+이는 라우터중 하나라도 문제가 발생하면 연결이 끊기기 때문에 위험하다.
+그래서 가장 가까운 AWS 서비스와 연결되도록 anycast ip 를 지원한다.
+사용자가 웹서버에 접근하려 하면 가장 가까운 edge location 서버로 연결된다.
+따라서 캐싱이 있는 cloudfront 와는 다른 서비스이다.
+- None HTTP 서비스에서도 동작함
+
+

@@ -1,0 +1,147 @@
+aws snow family
+데이터를 마이그레이션 하기 위한 이동 가능한 장치를 지원함
+- Data migration:
+	- Snowcone
+	- Snowball Edge
+	- Snowmobile
+- Edge computing:
+	- Snowcone
+	- Snowball Edge
+
+왜 snowfamily를 사용하나?
+데이터를 마이그레이션하는데 네트워크를 사용하면 비용과 시간이 엄청나게 발생할 수 가 있다.
+이를 우회하여 데이터를 전송하기 위해 실제 데이터를 이동할 수 있는 디바이스를 이동시킨다.
+
+
+Snowball Edge (상자)
+TB부터 PB까지 지원
+데이터 전송 당 비용 부과
+블록스토리지와 S3 호환 가능한 오브젝트 스토리지를 할당받음
+- Storage Optimized: 80TB of HDD
+- Compute Optimized: 42TB of HDD or 28TB NVMe
+
+Snowcone (휴대 가능한 작은 상자, 드론이송 가능)
+척박한 환경에서 데이터를 전송하기 위한 방법
+- Snowcone: 8TB of HDD
+- Snowcone SSD: 14TB of SSD
+공간적인 제약이 있는곳에 사용
+배터리와 케이블을 직접 준비해야함
+AWS로 바로 보내거나 네트워크를 통해 업로드 가능
+
+Snowmobile (트럭)
+엑사바이트 급 데이터를 전달 가능함
+매우 안전하고 오프라인임
+10PB 이상 데이터를 옮길때 추천
+
+Edge Computing
+기존에는 데이터를 전송하는 목적으로만 사용되었지만 컴퓨팅 기기로써 사용하는 사례도 있음
+Snowcone - 2CPUs, 4GB, USB-C
+Snowball Edge Compute - 104 vCPUs, 416 GiB of RAM, optional GPU, 28TB NVMe or 42TB HDD
+Snowball Edge Storage - 40 vCPUs, 80GiB of RAM, 80TB Storage
+모두 AWS Lambda 를 지원한다.
+랜트 방식으로 사용하기 때문에 월별 1년 또는 3년 약정으로 지불한다.
+
+OpsHub
+엣지컴퓨팅을 사용할 때 GUI 를 지원한다.
+
+
+
+Snowball 에서 Glacier 까지
+snowball데이터를 glacier로 바로 보낼수는 없다. 그래서 s3를 거쳐서 전송하면 된다.
+
+
+Amazon FSx
+제 3자 고성능 파일시스템을 지원한다.
+완전 관리형 서비스이다.
+- FSx for Luster
+	분산파일시스탬. Luster = cluster + linux
+	머신러닝과 같은 High Performance Computing (HPC)에 사용됨
+	100s GB/s, millions of IOPS, sub-ms latencies
+	SSD, HDD 지원
+	S3와 호환되어 S3를 파일로 읽어오는 작업도 가능함
+	VPN or Direct Connect로 연결 지원
+
+	Scratch File System - 임시 파일작업, 200MBps per TiB
+	Persistent File System - 영구저장, 같은AZ에 데이터가 복제됨
+
+- FSx for NetApp ONTAP
+	NFS, SMB, iSCSI
+	다양한 운영체제에 사용 가능
+	복제와 스냅샷도 가능
+	데이터중복제거 가능
+	저장공간이 유연하게 변경됨
+	지정시간 복제 기능을 사용하여 신속히 데이터를 복제하고 테스트 가능
+
+- FSx for Windows File Server
+	SMB, NTFS 지원
+	Linux 시스템에 마운트 되긴 함
+	Microsoft's Distibuted File SYstem (DFS) Namespace를 지원한다.
+	10s of GB/s, millions of IOPS, 100s PB of data
+	SSD, HDD 지원
+	VPN or Direct Connect로 연결 지원
+	Multi-AZ 사용 가능
+	S3에 백업됨
+
+- FSx for OpenZFS
+	NFS
+	1,000,000 IOPS, 0.5ms latency
+	스냅샷, 압축 저비용
+	point-in-time 지원하여 새 워크로드 테스트에 용이함
+
+	
+
+스토리지 Gateway 개요
+AWS의 강력한 스토리지 기능을 온프레미스에서도 사용하도록 지원하는 기능이다.
+"하이브리드 클라우드" 라고 한다.
+- 재해복구
+- 백업&복구
+- 데이터 티어
+- 파일 엑세스 지연 축소
+이에따라 여러가지 종류가 있음
+- S3 File Gateway
+	NFS나 SMB를 사용하여 S3에 연결할 수 있도록 지원함. HTTPS를 사용
+	캐싱을 지원하긴 함
+	IAM roles 를 성정해야함
+- FSx File Gateway
+	SMB, NTFS, Active Directory지원
+	안만들어도 연결이 가능하긴 한데
+	게이트웨이를 만들면 캐시 사용 가능하기 때문에 사용함
+- Volume Gateway
+	블록 스토리지로 iSCSI 프로토콜 사용
+	EBS Snapshot으로 백업 가능
+`	- Cache volumes: 저지연 최근 데이터 사용
+	- Stored volumns: 모든 데이터는 on-premise에 있지만 S3로 백업을 지원함
+- Tape Gateway
+	물리적으로 테이프를 사용해 백업하는 회사를 위함
+	같은 프로토콜을 사용하여 백업하지만 aws에서 그대로 사용 가능
+	기존 테이프 기반 시설에서 동작하고 iSCSI 도 지원함
+
+게이트웨이는 항상 로컬에 설치되어 있음
+하드웨어 없으면 AWS에서 구매 가능
+
+
+AWS Transfer Family
+FTP 프로토콜만 사용하여 전송하는 경우 사용
+FTP, FTPS, SFTP
+이를 사용하여 S3또는 EFS업로드 가능
+multi-AZ 지원
+엔드포인트 시간당 지불 + 전송 GB당 지불
+
+
+DataSync개요
+자주 출제됨
+데이터를 동기화하여 대용량의 데이터를 여기저기로 옮길 수 있음
+- on-premises (NFS, SMB, HDFS, S3API) - agent 를 사용해야함
+- AWS to AWS (다른 스토리지 시스템) - agent 필요없음
+다음과 동기화 가능
+- S3, EFS, FSx
+실시간이 아닌 스케쥴링으로 동작함
+(중요) 메타데이터를 보존하며 데이터 이동 가능
+10Gbps 속도
+
+snowcone 이 사용되기도 함
+
+
+
+모든 스토리지 옵션 비교
+

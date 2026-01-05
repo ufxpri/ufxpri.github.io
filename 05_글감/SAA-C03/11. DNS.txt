@@ -1,0 +1,109 @@
+DNS
+무엇인가?
+도메인 네임 시스템
+웹사이트의 주소를 ip 로 바꿔준다.
+
+용어
+Domain Registrar: Amazon Route53, GoDaddy...
+DNS Records: A, AAAA, CNAME, NS, ...
+Zone File: DNS records 를 담고있음
+Name Server: DNS 쿼리를 탐색
+Top Level Domain (TLD): .com, .us, .in, .gov, .org, ...
+Second Level Domain (SLD): amazone.com, google.com, ...
+
+
+Route 53
+
+고가용성 확장성을 가진 AWS 서비스.
+이것은 domain registrar 의 역할도 하기 때문에 도메인 등록도 가능하다.
+각각의 레코드는 다음을 포함하고 있음
+- Domain/subdomain Name - example.com
+- Record Type - A or AAAA
+- Value - 123.456.789.123
+- Routing Policy - Route 53 이 쿼리에 응답하는 형식
+- TTL - DNS Resolvers 가 이 레코드를 얼마나 유지하도록 할 지 설정
+
+레코드 타입에는 다음이 있음
+A / AAAA / CNAME / NS
+
+Hosted Zones
+호스팅 존으로 도메인과 서브도메인을 라우팅 하는데 사용됨
+- Public Hosted Zones : 인터넷의 트래픽을 라우팅하는 방법을 가지고 있음 application1.mypublicdomain.com
+- Private Hosted Zones : 한개 또는 더 많은 VPC 에서 트레픽을 라우팅 하는 방법을 가지고 있음 application1.company.internal
+
+한달에 $0.50
+
+
+CNAME 과 Alias 의 차이를 알아보자!
+
+CNAME: 호스트네임을 다른 호스트네임으로 변경할 수 있다. 루트 도메인에만 해당된다.
+	app.mydomain.com => blabla.anything.com
+	something.mydomain.com
+Alias: 호스트네임을 AWS 리소스를 가리킬 수 있다. 루트 도메인과 논루트도메인에 사용할 수 있다.
+	app.mydomain.com => blabla.amazonaws.com
+	mydomain.com
+	무료!
+
+Alias
+- elastic load balancer
+- cloudfront distributions
+- API gateway
+- Elastic Beanstalk environments
+- S3 Websites
+- VPC Interface Endpoints
+- Global Accelerator accelerator
+- Route 53 record in the same hosted zone
+
+- EC2 DNS 에는 사용할 수 없다!!
+
+
+Routing Policies
+라우팅 정책
+DNS 는 요청을 라우팅 하지 않는다. 어디로 가야할 지 알려줄 뿐 이다.
+- simple : DNS 를 요청하면 연결 가능한 ip 목록을 돌려준다.
+- weighted : 가중치에 따라 확률적으로 ip 를 돌려준다.
+- latency-based : 레이턴시 기반으로 가장 가까운 리전에 연결하도록 한다.
+
+- health checks : Route 53 을 사용하여 리전의 헬스체크를 통해 라우팅을 변경할 수 있다.
+- calculated health check : 여러개의 인스턴스의 헬스를 동시에 체크한다. 256 까지 가능
+
+private zone 에 있는 경우에는 cloud watch alarm 을 통해 외부에 있는 헬스체커에 헬스를 알려줄 수 있다.
+
+
+Failover (Active-Passive)
+우선 할당되는 route 가 있고 실패하면 failover 로 대체 라우팅으 로 변경된다.
+
+
+지리적 위치 (Geolocation)
+실제로 유저가 위치해있는 리전이 사용된다.
+레이턴시 기반과는 다르다. 이 옵션은 사용자의 의도대로 연결이 변경된다.
+continent, country, state 에 기반하여 라우팅 할 수 있다.
+default 레코드가 있어야 한다.
+health check 와 연계될 수 있다.
+
+
+geoproximity Routing policy
+사용자의 지리적 위치를 기반으로 트래픽을 라우팅 하도록 한다.
+bias 값을 사용하여 트래픽을 특정 지역으로 집중 시킬 수 있다.
+리전 간 부담을 분담할때 사용하기 좋다.
+
+
+IP-based Routing
+클라이언트의 IP를 기반으로 라우팅한다.
+CIDR 목록을 만들어 라우팅 한다.
+특정 ISP 의 클라이언트를 라우팅 할 때 사용할 수 있다.
+
+
+Multi-value
+여러개의 리소스토 트래픽을 라우팅 할 떄 사용한다.
+Route53 은 여러개의 값/리소스 를 반환한다.
+health check 와 연계될 수 있다.
+각 multi-value 쿼리마다 최대 8개의 레코드가 반환된다.
+ELB 를 대체할 수 없다.
+
+
+
+Domain Registar vs DNS Service
+다른 도메인 레지스트라를 사용해서 도메인을 구매해도 된다.
+네임서버만 aws 로 연결되도록 하면 된다.
+

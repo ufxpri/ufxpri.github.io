@@ -1,0 +1,69 @@
+iam 소개
+
+iam 이란 identity and access management 의 약자이다.
+root 유저는 만들어져도 공유되어선 안된다. 
+users 는 그룹이 될 수 있다.
+
+그룹은 유저만 포함할 수 있다. 중복 그룹은 불가능하다. 하나이상의 그룹을 할당하는것은 가능하다.
+
+iam 계정을 사용해서 새로운 계정을 등록해보자.
+
+그룹에 정책을 적용하면 그룹 내의 모든 사용자가 해당 권한을 가지고 있다.
+그룹이 없는경우 인라인 정책을 설정할 수 있다.
+중복 권한 할당이 가능하다.
+
+SID: identifier for the statement (옵션)
+effect: 해당 정책이 거부인지 허용인지 나타냄
+principal: 이 정책이 적용되는 계정/유저/역할을 의미
+action: 허용 또는 거부되는 행동들
+resources: 이 정책이 적용되는 모든 리소스 들
+
+비밀번호 정책을 설정할 수 있다.
+- 최소 길이
+- 대소문자 포함
+- 숫자포함
+- 특수문자 사용
+- 사용자가 패스워드 변경 서용
+
+MFA 사용
+root 계정은 반드시 mfa 가 설정되어 있어야 한다.
+- 가상 MFA 장치 - 구글, authy
+- universal 2nd factor (u2f) security key = yubikey
+- hardware key fob mfa device
+- hardware key fob mfa device for aws govcloud
+
+비밀번호 정책 변경
+
+3가지 접속 방법이 있다.
+- AWS Management Console (패스워드와 MFA 로 보안)
+- AWS Command Line Interface (CLI): 엑세스 키를 통해 보안
+- AWS Software Developer Kit (SDK): 엑세스 키를 통해 보안
+
+엑세스티는 AWS Console 에서 생성이 가능하다.
+사용자는 자신의 엑세스키를 관리해야 한다.
+엑세스키는 패스워드와 같다
+Access Key ID == username
+Secret Access Key == password
+
+Cloud shell 은 aws 콘솔에서 cli를 사용할 수 있는 기능이다. 웹페이지에서 터미널을 사용할 수 있다. 이는 특정 리전에만 활성화 되어있다.
+
+IAM 역할
+이 역할은 사람에게 사용되는것이 아닌 서버에서 사용되는 기능에 대한 접근 권한을 설정한다.
+서비스 간에 접근 능력을 제한 할 수 있다.
+
+IAM Credentials Report (계정 레벨)
+- 모든 계정 목록과 credential 과 관련된 상태 확인
+
+IAM Access Advisor (유저레벨)
+- 유저에게 부여된 서비스 권한과 마지막에 엑세스한 날짜가 언제인지 알려줌
+- 권한 정책을 수정하는데 사용할 수 있음
+
+
+요약!
+유저
+그룹
+정책
+역할
+보안: MFA + Password Policy
+엑세스 키: CLI 나 SDK 를 통해 조작 가능
+audit: 보안 보고서나 엑세스 기록을 볼 수 있음

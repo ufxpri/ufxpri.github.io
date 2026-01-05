@@ -4,7 +4,7 @@ title = 'Minimal Blog'
 
 [params]
   description = 'Typography driven, feature-rich blogging theme with minimal aesthetics'
-  author = 'Your Name'
+  author = 'Jo Seungjun'
 
 [markup]
   [markup.goldmark]

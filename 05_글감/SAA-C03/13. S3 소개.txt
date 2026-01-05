@@ -1,0 +1,69 @@
+S3
+
+s3 를 사용한 서비스는 많다.
+s3는 사용 방법이 많다.
+- 백업, 저장소
+- 재해복구
+- 아카이빙
+- 하이브리드 클라우드
+- 어플리케이션 호스팅
+- 미디어 호스팅
+- 데이터 분석
+- 소프트웨어 배포
+
+파일은 버킷 이라고 하는 공간 안에 저장된다.
+전역적으로 유니크한 이름을 가져야한다.
+버킷은 리전 한에 생성되고 글로벌고 사용할 수 있다.
+
+키 = 데이터의 절대적 위치
+디랙터리의 개념이 없다.
+오브젝트 = 데이터 그 자체 최대5TB
+버전
+5GB이상은 multi-part 업로드로 업로드 된다.
+메타데이타 태그 등을 가질 수 있다.
+
+보안
+
+User-Based : IAM 정책이 주어짐
+Resource-Based : 리소스 기반 
+	- bucket policies
+	- object Access control
+	- bucket Access control
+
+S3 Bucket Policies
+JSON 기반이다.
+
+block pubic access - 퍼블릭을 허용하지 않는다면 이것을 활성화 하는것이 좋다.
+
+
+S3웹사이트
+웨밧이트의 파일등이 있을텐데 이를 S3버킷에 업로드 하여 공개할 수 있다.
+403오류가 발생했다면 public정책에 오류가 있는것으로 확인해 볼 필요가 있다.
+
+static website hosting 항목이 있음으로 활성화 한다.
+
+
+S3버저닝
+파일의 버전을 관리할 수 있는데 버킷별로 활성화된다.
+버전은 기본적으로 null이고 설정을 변경하더라도 기존 version은 삭제되지 않는다.
+
+
+Replication (CRR & SRR)
+버저닝을 활성화 해야하며 복제 방식은 2가지가 있다.
+- Cross-Region Replication (CRR) - 여러 리전의 레이턴시를 낮추기 위해 사용
+- Same-Region Replication (SRR) - 테스트버전과 상용버전간 테스트를 위해 사용
+- 복제는 비동기로 이루어진다.
+적정한 IAM을 할당해야 한다.
+
+
+S3스토리지 클래스
+- Standard - 일반목적
+- Standard-Infrequent Access (IA) - 자주는 아니지만 빠르게 접근할때. 검색비용 발생
+- One Zone-Infeequent Access - 내구성은 높지만 가용성은 낮음
+- Glacier Instant Retrieval - 아카이빙 검색비용 발생, 밀리세컨 가능
+- Glacier Flexible Retrieval - 1~5, 3~5, 5~12 시간으로 변경가능
+- Glacier Deep Archive - 저렴사지만 12~48 기다려야함
+- Intelligent Tiering - 사용 페턴에 따라 변경 가능, 검색비용은 없음, 30, 90, 90~700+, 180~700+ 에 따라 옵션 변경 가능
+내구성과 가용성에 대해 설명하자면
+내구성 11 9's
+가용성 99.99% 가용

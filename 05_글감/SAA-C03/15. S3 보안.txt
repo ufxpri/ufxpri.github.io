@@ -1,0 +1,83 @@
+S3 보안
+
+암호화 4가지 방법으로 가능함
+- Server-Side Encryption (SSE)
+	서버 측면에서 암호화가 이루어진다.
+	- SSE-S3: 헤더를 "x-amz-server-side-encryption":"AES256" 으로 설정해야 한다.
+	- SSE-KMS: KMS 서비스를 사용해서 키를 관리해야 한다. CloudTrail 에 사용 기록이 남는다. "x-amz-server-side-encryption":"aws:kms"
+	- SSE-C: 키는 외부에서 관리되지만 여전히 server-side 이다. HTTPS 를 통해 파일과 키를 업로드하면 해당 키로 암호화 하고 저장한다.
+
+- Client-Side Encryption (CSE)
+	직접 암호화 한 데이터를 전송한다.
+	클라이언트에서 암호화 복호화 및 키를 관리한다.
+
+전송중 함호화 (SSL/TLS)
+HTTPS 를 사용함으로써 전송중 암호화를 구현할 수 있다.
+이를 강제하기위해선 secure transport를 사용하고 있지 않을때 거절하는방법이 있다.
+
+
+기본 암호화
+기본적으로 SSE-S3 로 암호화가 되어있다
+버킷 정책으로 암호화를 강제 하도록 할 수 있다. 이렇게 정의한 정책은 기본 정책보다 먼저 평가된다.
+
+
+S3 CORS - Cross-Origin Resource Sharing
+이 정책때문에 다른 origin 에서 온 데이터를 사용하지 못하는 경우가 발생한다. S3도 마찬가지이다.
+정확한 CORS 헤더를 설정해야 한다.
+
+
+MFA 삭제
+객체 버전을 삭제할때, 버저닝을 종료할때
+루트 계정만 변경가능
+특정 객체가 삭제되는것을 방지하는 보안장치이다.
+
+
+S3 Access Logs
+모든 S3에 대한 요청은 다른 S3 버킷에 저장되어 분석할 수 있다.
+동일한 버킷에 설정하면 무한 루프가 발생해서 로그가 쌓인다.
+
+
+사전 서명된 URLs
+url 에는 만료기간을 설정할 수 있어서 12~124시간 까지 설정할 수 있다.
+일정시간동안 접근 가능한 키를 생성해서 사용자에게 전달할 수 있다.
+버킷이 프라이빗이여도 접근 가능한 url 을 생성해낸다.
+
+
+S3 잠금정책 Glacier Vault Lock
+- WORM (Write Once Read Many) 모델을 적용한다.
+- Vault Lock Policy 를 설정하면 그 이후로 object는 변경되거나 삭제될 수 없다.
+- 심지어 관리자도 삭제하지 못한다.
+- 법적인 규율 때문에 데이터를 영구 보존해야 하는 경우 유용하다.
+
+3S 에 비슷한 기능이 있는데 객채 각각의 오브젝트에 적용할 수 있다.
+일정 시간동안 오브젝트의 버전 삭제를 막는다.
+2가지 모드가 있다.
+- Retention mode - Compilance:
+	오브젝트가 덮어씌워지거나 삭제되는것을 완전히 막는다.
+	retention 모드와 기간은 수정할 수 없다.
+- Retention mode - Governance:
+	대부분의 유저는 위와같이 설정을 변경할 수 없다.
+	특수 권한을 가진 유저는 변경이 가능하다.
+두 모드 모두 Retention 기간을 설정해야 한다.
+
+"법적 보존" 을 설정하면 무한기간동안 오브젝트를 보존한다.
+s3:PutObjectLegalHold 권한을 가진 사람은 이를 설정하거나 해제할 수 있다.
+
+
+Access Points
+사용자가 많아질수록 버킷 접근에 힘들어질 수 있다. 이때 Access Point 를 만들어 관리할 수 있다.
+Access Point 는 s3 버킷의 접근 가능한 objects 를 제한함으로써 사용자마다 접근할 수 있는 파일을 제한하는데 사용된다.
+원래는 bucket policy 를 사용하여 이를 제한하곤 했는데 이를 Access point 를 만들어 각자 관리함으로써 쉽게 제어할 수 있다.
+- 개별 DNS 이름을 가지게 된다.
+- Access point 로 권한을 관리하게 된다.
+
+VPC Origin
+- VPC 안에서만 bucket 에 접근할 수 있도록 설정할 수 있다.
+- VPC Endpoint 라는것을 만들어서 bucket 의 access point에 접속해야 한다.
+- VPC Endpoint 는 access point와 s3 bucket에 대한 접근 권한을 허용해야 한다.
+
+S3 Object Lambda
+Access point 를 사용해서 중간에 Lambda 가 동작하도록 설정할 수 있다.
+S3 Access Point 를 만들고 Lambda 함수를 준비한 뒤 Lambda Access point 로 이를 엮는다.
+이렇게하면 Lambda Access Point 로 데이터를 요청할 때 lambda function을 호출하여 원하는 작업을 수행할 수 있다.
+

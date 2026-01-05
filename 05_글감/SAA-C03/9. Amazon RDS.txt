@@ -1,0 +1,124 @@
+Amazon RDS
+- 관리형 데이터베이스
+- sql 로 동작
+postgress musql mariadb orable microsoft sql
+이걸 왜 쓸까? 관리형서비스여서 우리가 데이터베이스 상태를 관리하지 않아도 된다.
+
+EBS 위에 구현된다.
+
+Storage Auto Scaling
+- 이 기능이 활성화 되어 있으면 데이터베이스 확장이 필요할때 자동으로 확장된다.
+
+
+RDS Read Replicas 와 multi AZ 를 구분할 수 있어야 한다. (중요)
+
+read replicas - 읽는것을 도와준다.
+- 15개까지 확장 가능
+- AZ간, Region 간 가능
+- ASYNC 한 읽기 속성
+- 레플리카를 DB 자체로 승격 가능
+
+replica 는 AZ 간 데이터 이동에 비용을 부과하지 않는다.
+하지만 다른 region 에 있는경우에는 비용이 발생한다.
+
+
+multiAZ - 재해복구를 할 수 있다.
+- SYNC 동작
+- 한개의 DNS 이름을 가지고 자동으로 페일오버를 설정한다.
+- 가용성을 증가한다.
+- AZ 가 망가질 경우에도 동작가능
+- 메뉴열이 따로 없어도 된다.
+- 스케일링을 위한것이 아니다.
+
++ read replica 는 재해 복구를 위해 MultiAZ 로 사용 될 수 있다.
+
+
+이 과정은 다음과 같다.
+
+1. 스냅샷을 만든다
+2. 새로운 AZ 에 스냅샷을 이용한 DB 가 생성된다.
+3. 동기화가 이루어진다.
+이 과정에서 DB 다운타임은 없다.
+
+
+RDS 는 기본적으로 내부 설정이 불가능 그러나 RDS Custom 은 설정 가능함
+- 내부설정
+- 설치 패치
+- 네이티브 기능 사용
+- Automation mode 를 해제해야 한다.
+- DB 백업이 필수가 된다.
+
+Oracle Microsoft SQL 만 가능하다.
+
+
+
+
+Amazon Aurora
+Postgress 와 MySQL 에만 사용 가능
+클라우드 최적화된 서비스 이다.
+- MySQL 에서 5배, Postgress 에서 3배 성능 향상이 있다.
+- 저장공간이 10GB 단위로 자동 증가한다. 최대 128TB
+- 15개의 복제를 가질 수 있다.
+- HA 하다. multi AZ 와는 비교가 안된다.
+
+- 3개의 AZ에 걸친 6개의 복제 - 복제, 자동 복구, 자동 확장
+- 마스터가 있고 failover 가 있다.
+- 리전간 복제가 가능하다.
+
+
+Auror DB Cluster
+- 1개의 writer endpoint 를 가진다.
+- 여러개의 읽기 복제를 가진다.
+- reader endpoint 를 사용해 읽기전용 DB 중 하나에 연결할 수 있다.
+
+고급개녕
+레플리카와 오토스케일링
+1. 읽기 요청이 많아지면 읽기 DB 를 복제할 수 있다. - 복제본 오토 스케일링
+2. 몇몇 복제DB 는 다른 성능으로 정의되어있다. 이를 사용자 지정 엔드포인트로 전환할 수 있다. - 사용자 지정 엔드포인트
+3. 간헐적이거나 요청이 불규칙 적일떄 - 서버리스
+4. 모든 aurora 클러스터가 읽기 쓰기 가능 - 멀티마스터
+5. 1개의 읽기쓰기 5개의 읽기 16개 복제 리전간 1분이내로 복제 가능 - 글로벌 Autota
+6. 딥러닝 사용가능 - Autota machine learning
+
+
+백업
+- 자동백업 : 최소 5분 단위로 백업
+- 수동 스냅샷
+- 스냅샷으로 저장하여 운영비용 절약 (원할떄 복구)
+
+RDS & Aurora 백업 옵션
+1. backup or snapshot 은 새로운 데이터베이스를 만들어 복원한다.
+2. S3 를 사용한 MySQL RDB 복원은 온프레미스로 백업 생성 후 S3에 백업 한다.
+3. S3 를 사용한 MySQL Aurora 복원은 Percona XtraBackup 를 사용해 백업하고 S3에 저장한다.
+
+aurora database cloning
+테스트로 사용하고 싶을때 그냥 DB를 복사해서 사용할 수 있다.
+- 스냅샷, 복원 보다 속도가 훨씬 빠름
+- 원본 DB 와 데이터 공간을 공유해서 사용한다.
+- 업데이트가 있으면 업데이트만을 위한 DB 공간을 할당하여 적용한다.
+- 프로덕션 DB 로 부터 스테이징 DB 를 만드는데 유용하다.
+
+
+RDS&Aurora 보안
+KMS 를 사용해 DB 암호화 (실행시에 정의되어야 함)
+마스터가 암호화 안되어있으면 read replica 도 암호화 할 수 없다.
+이미 사용중인 DB 를 암호화 할 때는 스냅샷과 복원 과정에서 암호화를 할 수 있다.
+
+클라이언트 통신에서의 보안은 기본적으로 tls 를 사용한다.
+ID/PW 를 통한 방법 이외에 IAM 을 사용한 인증도 할 수 있다.
+보안그룹으로 네트워크 접근을 제어할 수 있다.
+RDS & Aurora 는 ssh 가 지원 안된다.
+클라우드워치를 사용해서 장기간 로그보관해야한다.
+
+ 
+RDS Proxy
+프록시를 사용하면 
+- rds 를 위한 관리형 프록시이다.
+- 앱이 DB 연결을 pool 하고 공유할 수 있다
+- DB 자체의 CPU와 RAM 부하를 줄여준다. 커넥션 수도 관리해준다.
+- 서버리스에 autoscailing, multi az 를 지원한다.
+- RDS & Aurora 의 filovertime 을 66% 까지 줄여준다.
+- RDS(MySQL, PosgreSQL, MariaDB) Aurora(MySQL, PostgreSQL)
+- IAM 인증을 강제하여 보안을 높힐 수 있다.
+- 퍼블릭 엑세스가 불가능 하다. 보안이 강력하다.
+- lambda에서 dB에 접근할때 또한 rds proxy 적합하다.

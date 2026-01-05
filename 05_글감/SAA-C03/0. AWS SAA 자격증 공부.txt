@@ -1,0 +1,48 @@
+나는 과연 언제 어느정도로 공부해야  SAA 자격증을 딸 수 있을까?
+
+일단 SAA 자격증의 구성부터 알아보자.
+
+https://d1.awsstatic.com/ko_KR/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Sample-Questions.pdf
+가장 먼저 샘플 문제를 살펴봤다. 내가 봐야하는 문제는 C03 으로 지난해 2022년 8월에 개정된 문제집이다. 전체 문항을 쭉 둘러 본 결과 문제의 구성은 문제상황을 주고 이를 해결할 수 있는 방향을 의논하는 방식으로 진행된다. 따라서 어떤 기능이 무언가를 제공한다도 중요하지만 진짜 이 기능을 언제 어떻게 사용해야 적절한지 알고있는지를 본다.
+
+https://angehende-ingenieur.tistory.com/230
+문제 소스를 어디서 얻는지 알려준다. 대부분의 글에서 udemy 강의를 강추하는것 같다. udemy 를 필수로 숙지하고 문제 해결에 도입하는게 좋을 것 같다. 또한 덤프의 문제가 잘 출제 된다고 한다. 총 4개의 소스를 제공하는데 추천순위대로 정리하자면 1. aws skill builder - aws에서 제공하는 문제 덤프 인 만큼 숙지하고가면 거의 그대로 문제가 나오는 것을 볼 수 있다. 모의고사로 가장 적절한 소스인 것 같다. 2. examtopics - 해외 사이트에서 제공하는 문제 덤프이다. 정말 많은 사람들로 구성되어 있고 그만큼 규모가 커서 학습용 자료를 얻기에 이만큼 개방적인 곳도 없다고 한다. 3. udemy 강의 문제 - udemy 강의를 결제하면 따라오는 간단한 문제 들 이다. 이 문제들은 시험에 직접 나오진 않지만 학습한 개념을 확인하는데 촛점이 맞춰져 있다고 한다. 한번씩 풀어보면 많은 도움이 된다고 한다. 4. korean dump - 별로다.. 문제 중복도 많고 정답도 틀리게 나와있다. examtopic 봐라..
+
+https://dingdingmin-back-end-developer.tistory.com/entry/AWS-Solution-Architect-AssociateSAA-C03-%EC%B7%A8%EB%93%9D-%ED%9B%84%EA%B8%B0
+이 글에서는 saa 를 현업에서 사용하기 위해 공부한 기록을 담고있다. 핵심은 udemy 강의를 봐야한다는 것이고 문제가 어떤식으로 나오는지 어떻게 접근해야하는지 대략적인 짐작을 할 수 있도록 도와준다.
+
+https://www.udemy.com/course/best-aws-certified-solutions-architect-associate/learn/lecture/29388672#overview
+udemy 강의. 총 33개의 섹션으로 이루어져 있고 평균적으로 40분 분량이다. 학생때 1교시 시간을 생각해본다면 하루에 7교시 곧 7개 섹션을 공부해서 5일 = 1주일 안에 끝낼 수 있는 과정이다. 그러나 나는 직장인.. 하루종일 이것만 보고있을 시간은 없다. 강의 시간을 내가 가진 시간안에 잘 분배해보도록 하자. 강의는 총 27시간 주중 내가 만들 수 있는 시간은 평균적으로 1시간. 주중 4일을 공부한다고 했을 때 한달안에 16시간을 사용할 수 있다. 나머지 10시간은 주말에 잘 분배하면 되는데 4번의 토요일에 공부를 한다고 했을 때 2.5시간을 강의를 들으면 된다. 따라서 규칙적으로 강의를 듣고 진도를 나간다면 한달안에 안정적으로 끝낼 수 있다. 그럼 이를 이용해 시간표를 짜볼까?
+
+강의 카테고리는 다음과 같다.
+
+EC2 기초
+EC2 인스턴스 스토리지
+고가용성 및 스케일링성: ELB 및 ASG
+AWS 기초: RDS + Aurora + ElastiCache
+Route 53
+클래식 솔루션 아키텍처 토론
+Amazon S3 소개
+고급 Amazon S3
+아마존 S3 보안
+CloudFront 및 AWS 글로벌 엑셀러레이터
+AWS 스토리지 추가 기능
+디터플링 애플리케이션: SQS, SNS, Kinesis, Active MQ
+AWS의 컨테이너: ECS, Fargate, ECR 및 EKS
+솔루션 설계자 관점의 서버리스 개요
+서버리스 솔루션 아키텍처 토론
+AWS의 데이터베이스
+데이터 & 분석
+머신 러닝
+AWS모니터링 및 감사: CloudWatch, CloudTrail 및 Config
+Identity and Access Management (IAM) 고급
+AWS보안 및 암호화: KMS, SSM Parameter Store, CloudHSM, ...
+네트워킹 - VPC
+재해 복구 및 마이그레이션
+더 많은 솔루션 아키테거
+기타 서비스
+백서 및 아키텍처 - AWS공인 솔루션스 아키텍트 어소시에이트
+시험준비 + 연습 시험 AWS Certified SAA
+축하
+
+정말 많은 단계로 나뉘어져 있는것 을 알 수 있었다. 단순히 서비스에 대한 설명 뿐 만 아니라 다양한 레벨에 있는 개념까지 다루고있어서 하나틔 카테고리로 정리가 안되는 듯 하였다.

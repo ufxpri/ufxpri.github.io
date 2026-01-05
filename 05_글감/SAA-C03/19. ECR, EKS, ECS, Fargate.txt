@@ -1,0 +1,137 @@
+컨테이너 ECS, EKS
+
+Amazon Elastic Container Service (Amazon ECS) - 컨테이너 서비스
+Amazon Elastic Kubernates Service (Amazon EKS) - 쿠버네티스 서비스
+AWS Fargate - 서버리스컨테이너 (ECS, EKS와 같이 동작할 수 있음)
+Amazon ECR (Amazon Elastic Container Registry) - 도커 이미지를 저장할 수 있음
+
+
+Amazon ECS
+ECS 는 ECS Task 라는 단위로 작업을 수행하는데
+이 작업은 여러개의 인스턴스에 분산되어 할당될 수 있다.
+이를 위해선 EC2 
+
+Launch Type
+1. 호스트로 사용될 EC2 인스턴스 생성
+2. ECS Agent 설치
+3. 어플리케이션 런치
+순서대로 작동된다.
+
+Fargate Launch Type
+1. fargate 에 명령
+2. 어플리케이션 런치
+완전 관리형 서버리스 서비스이고 인스턴스를 생성할 필요도 없음으로 매우 간편하다.
+이정도면 Agent 를 왜 써야 하는지 의문이 들 정도
+
+이를 구현하기 위해선 IAM Role 을 설정해야 한다.
+- EC2: Instance Profile - ECS 서비스와 관련된 서비스와 통신하는 권한
+- ECS Task: task 별로도 Role 을 관리해야함.
+
+Data Volumes (EFS)
+데이터를 연결하는데는 EFS가 자주 사용된다
+Fargate + EFS = serverless 가 된다
+S3는 마운트 될 수 없다. 그래서 여기서 설명하지 않는다.
+
+ECS 오토 스케일링
+CPU 사용율
+Memory 사용율
+target 당 요청율
+을 기반으로 스케일링 가능
+
+스케일링 또한 
+- Target-Matric기반
+- Step-CloudWatch기반
+- ScheduledScaling-시간 기반
+별로 설정할 수 있다.
+
+주의할 점은
+ECS Service Auto Scailing (task level)
+EC2 Auto Scaling (EC2 instance level)
+이 두개는 서로 다르다는 점 이다. (그래서 task는 확장되더라도 인스턴스가 부족하면 한계가 온다...)
+
+그래서 Fargate Auto Scaling이 상대적으로 쉽다.
+ECS Capacity Provider 라는게 있어서 ECS 그룹의 용량이 부족하면 스케일링을 해주는 서비스가 있다.
+
+
+Event Bridge 를 통해 추가된 task로 작업을 시작할 수 있다.
+예) S3 버킷에 이미지가 등록되면 EventBridge 가 트리거 되어 ECS 안에 Task를 생성한다. 생성된 task 는 작업을 수행하고 사라진다.
+
+Event Bridge Schedule
+예약된 시간에 Task 를 발생시킬 수 있다.
+
+SQS Queue Example
+SQS로 메시지가 들어오면 Task 가 작업을 처리하는데 ECS scailing 으로 크기를 조절할 수 도 있다.
+
+Intercept Stopped Task using EventBridge
+task가 종료되면 EventBridge 로 신호를 보낼 수 있다.
+
+
+Amazon ECR
+private, public 설정 가능
+ECR은 S3와 협력하여 동작함.
+만약 S3에서 도커 이미지를 가져오고 싶다면 IAM Role 을 설정하여 권한을 허용해야 함
+ECR은 다음과 같은 추가 기능을 제공함
+- image valunerability scanning
+- versioning
+- image tags
+- image lifecycle
+- ...
+
+
+Amazon EKS (Amazon Elasric Kubernates Service)
+사용하는 API 자체가 다름
+- EC2 모드 - EC2를 기반으로 서비스 실행
+- Fargate 모드 - 서버리스
+쿠버네이트를 사용중일때 EKS 사용이 권장됨
+cloud-agnostic 하기 때문에 다른 클라우드에서도 사용이 가능하다.
+
+Node Types
+EKS 는 노드라고 하는 호스트 단위가 있다. 이를 다음 3가지 방식으로 관리 할 수 있다.
+- Managed Node Groups
+	Node 들은 EKS에 의해 관리되고 ASG의 일부로 생성됨
+	On-Demend or Spot Instances가 지원됨
+- Self-Managed Nodes
+	노드를 직접 만들고 EKS클러스터에 등록
+	사전 생성된 IAM 을 사용 가능
+	On-Demand or Spot Instances가 지원됨
+- AWS Fargate
+	관리가 필요없음
+
+EKS 의 tack 에 볼륨을 연결하려면 다음을 지원하고 있다.
+- EKS 클러스터에 StorageClass manifest를 정의해야 한다.
+- Container Storage Interface (CSI) 를 준수해야 한다.
+
+- Amazon EBS
+- Amazon EFS (works with Fargate)
+- Amazon FSx for Luster
+- Amazon FSx for NetApp ONTAP
+
+
+AWS App Runner
+사용자가 많은걸 알지 못해도 도커 이미지만 있다면 손쉽게 서비스를 시작할 수 있다.
+- 완전 관리형
+- 인프라스트럭처 필요없음
+- 소스코드 또는 컨테이너 이미지만 있으면 됨
+- 자동으로 앱 빌드
+- 오토스케일링도 자동의로 설정됨
+- VPC access support
+- 데이터베이스 연결도 지원됨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
