@@ -1,7 +1,6 @@
 baseURL = 'https://ufxpri.github.io/'
 languageCode = 'en-us'
 title = 'Minimal Blog'
-theme = ''
 
 [params]
   description = 'Typography driven, feature-rich blogging theme with minimal aesthetics'
