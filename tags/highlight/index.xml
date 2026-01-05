@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Highlight on Minimal Blog</title><link>https://ufxpri.github.io/tags/highlight/</link><description>Recent content in Highlight on Minimal Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ufxpri.github.io/tags/highlight/index.xml" rel="self" type="application/rss+xml"/><item><title>Harry Potter and the Half-Blood Prince</title><link>https://ufxpri.github.io/posts/harry-potter-and-the-half-blood-prince/</link><pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate><guid>https://ufxpri.github.io/posts/harry-potter-and-the-half-blood-prince/</guid><description>&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Number&lt;/th&gt;
+ &lt;th&gt;Title&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;Year&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;Harry Potter and the Philosopher’s Stone&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;2001&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;Harry Potter and the Chamber of Secrets&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;2002&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Harry Potter and the Prisoner of Azkaban&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;2004&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href="https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md"&gt;View raw (TEST.md)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;This is a paragraph.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id="header-1"&gt;Header 1&lt;/h1&gt;
+&lt;h2 id="header-2"&gt;Header 2&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;Header 1
+========
+
+Header 2
+--------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id="header-1-1"&gt;Header 1&lt;/h1&gt;
+&lt;h2 id="header-2-1"&gt;Header 2&lt;/h2&gt;
+&lt;h3 id="header-3"&gt;Header 3&lt;/h3&gt;
+&lt;h4 id="header-4"&gt;Header 4&lt;/h4&gt;
+&lt;h5 id="header-5"&gt;Header 5&lt;/h5&gt;
+&lt;h6 id="header-6"&gt;Header 6&lt;/h6&gt;
+&lt;pre&gt;&lt;code&gt;# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id="header-1-2"&gt;Header 1&lt;/h1&gt;
+&lt;h2 id="header-2-2"&gt;Header 2&lt;/h2&gt;
+&lt;h3 id="header-3-1"&gt;Header 3&lt;/h3&gt;
+&lt;h4 id="header-4-1"&gt;Header 4&lt;/h4&gt;
+&lt;h5 id="header-5-1"&gt;Header 5&lt;/h5&gt;
+&lt;h6 id="header-6-1"&gt;Header 6&lt;/h6&gt;
+&lt;pre&gt;&lt;code&gt;# Header 1 #
+## Header 2 ##
+### Header 3 ###
+#### Header 4 ####
+##### Header 5 #####
+###### Header 6 ######
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;</description></item></channel></rss>

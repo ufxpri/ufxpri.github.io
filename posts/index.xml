@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Minimal Blog</title><link>https://ufxpri.github.io/posts/</link><description>Recent content in Posts on Minimal Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 23 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ufxpri.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Why is this singleton implementation “not thread safe”?</title><link>https://ufxpri.github.io/posts/why_is_this_singleton_implementation_not_thread_safe/</link><pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate><guid>https://ufxpri.github.io/posts/why_is_this_singleton_implementation_not_thread_safe/</guid><description>&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/50566934/why-is-this-singleton-implementation-not-thread-safe"&gt;https://stackoverflow.com/questions/50566934/why-is-this-singleton-implementation-not-thread-safe&lt;/a&gt;&lt;/p&gt;</description></item><item><title>flask 로 메모장 서비스 만들기</title><link>https://ufxpri.github.io/posts/flask_start/</link><pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate><guid>https://ufxpri.github.io/posts/flask_start/</guid><description>&lt;h1 id="flask로-만드는-메모장-서비스"&gt;flask로 만드는 메모장 서비스&lt;/h1&gt;
+&lt;p&gt;flask 로 메모장을 만드는 프로젝트를 할겁니다.&lt;/p&gt;
+&lt;p&gt;만들기 전에 이 가이드 에서는 다음 항목을 다룹니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;flask
+&lt;ul&gt;
+&lt;li&gt;flask 는 무엇인가&lt;/li&gt;
+&lt;li&gt;flask 기본 사용방법&lt;/li&gt;
+&lt;li&gt;flask 의 기능 종류&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;http
+&lt;ul&gt;
+&lt;li&gt;http의 동작방식&lt;/li&gt;
+&lt;li&gt;사용자 요청 처리하기&lt;/li&gt;
+&lt;li&gt;서비스 설계하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="프로젝트-설계"&gt;프로젝트 설계&lt;/h1&gt;
+&lt;p&gt;본격적으로 flask 를 사용하기에 앞서 우리가 만들것이 무엇인지 설계해봅시다.
+메모장 서비스에는 다음과 같은 기능이 필요합니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;사용자 관리하기
+&lt;ul&gt;
+&lt;li&gt;회원가입&lt;/li&gt;
+&lt;li&gt;로그인&lt;/li&gt;
+&lt;li&gt;인증&lt;/li&gt;
+&lt;li&gt;로그아웃&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;메모 관리하기
+&lt;ul&gt;
+&lt;li&gt;메모 생성&lt;/li&gt;
+&lt;li&gt;메모 열랍&lt;/li&gt;
+&lt;li&gt;메모 수정&lt;/li&gt;
+&lt;li&gt;메모 삭제&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;그리고 우리가 만들 페이지는 다음과 같습니다.&lt;/p&gt;</description></item><item><title>gatsby-start</title><link>https://ufxpri.github.io/posts/blog/gatsby-start/</link><pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate><guid>https://ufxpri.github.io/posts/blog/gatsby-start/</guid><description>&lt;h1 id="gatsby-시작하기"&gt;Gatsby 시작하기&lt;/h1&gt;
+&lt;p&gt;아주 오래전 html 과 css 만을 가지고 웹사이트를 만들었던때와 비교해서 지금은 다양한 형태와 언어의 웹사이트들이 만들어졌 습니다.
+다양한 형태중 서버의 자원을 최소화하는 형태의 정적 웹사이트가 다시 주목을 받게 되었고 gatsby 가 탄생했죠.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;웹사이트의 형태에 대해선 &lt;a href="https://gollumnima.github.io/posts/webpage_type" title="웹형태의 간단한 설명"&gt;이글&lt;/a&gt;을 참조해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;또한 깃허브를 사용하는 유저가 많아지고 마치 자신의 포트폴리오 처럼 사용하는 유저가 생기면서 블로그 기능이 생기게 되었습니다.
+이때 깃허브는 파일을 업로드해서 호스팅해주는곳으로써 서버사이드의 작업을 처리할 수 없는 형태였기때문에 깃허브를 호스트로하는 블로그의 형태로 가장 적합한 것은 바로 정적 웹사이트 였습니다. 따라서 다음과 같은 정적 웹사이트 빌더들이 만들어졌죠 (jekyll, hugo, gatsby)
+그중 gatsby 는 다른 프레임워크와 다르게 JavaScript 를 기반으로하고 React 를 사용하며 MIT 라이센스를 가지고 있습니다. &lt;a href="https://www.reddit.com/r/webdev/comments/b0j9rs/infographic_gatsby_vs_hugo_vs_jekyll/"&gt;참고 이미지&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Introduction to "Defence against the Dark Arts"</title><link>https://ufxpri.github.io/posts/introduction-to-defence-against-the-dark-arts/</link><pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate><guid>https://ufxpri.github.io/posts/introduction-to-defence-against-the-dark-arts/</guid><description>&lt;p&gt;Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops disciplinary hearing. Grindlewald pig’s tail Sorcerer&amp;rsquo;s Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.&lt;/p&gt;</description></item><item><title>Fantastic Beasts and Where to Find Them</title><link>https://ufxpri.github.io/posts/fantastic-beasts-and-where-to-find-them/</link><pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate><guid>https://ufxpri.github.io/posts/fantastic-beasts-and-where-to-find-them/</guid><description>&lt;p&gt;This post demonstrates various markdown features and code block examples.&lt;/p&gt;
+&lt;h2 id="code-examples"&gt;Code Examples&lt;/h2&gt;
+&lt;p&gt;Basic code block with syntax highlighting:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 1
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 2
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 3
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 4
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 5
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 6
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 7
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 8
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 9
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;10
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-jsx" data-lang="jsx"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;import&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;React&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;from&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;react&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Post&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; ({ &lt;span style="color:#a6e22e"&gt;data&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; { &lt;span style="color:#a6e22e"&gt;post&lt;/span&gt; } }) =&amp;gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;Layout&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;Heading&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;variant&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;h2&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;as&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;h2&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {&lt;span style="color:#a6e22e"&gt;post&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;title&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;Heading&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;Layout&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;export&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;default&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Post&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="text-formatting"&gt;Text Formatting&lt;/h2&gt;
+&lt;p&gt;Here will &lt;code&gt;inline code&lt;/code&gt; go, just inside the text. Wow!&lt;/p&gt;</description></item><item><title>Curses and Counter-curses (Bewitch Your Friends and Befuddle Your Enemies with the Latest Revenges: Hair Loss, Jelly-Legs, Tongue-Tying, and Much, Much More)</title><link>https://ufxpri.github.io/posts/curses-counter-curses-and-more/</link><pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate><guid>https://ufxpri.github.io/posts/curses-counter-curses-and-more/</guid><description>&lt;p&gt;Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops disciplinary hearing. Grindlewald pig’s tail Sorcerer&amp;rsquo;s Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.&lt;/p&gt;</description></item><item><title>Harry Potter and the Half-Blood Prince</title><link>https://ufxpri.github.io/posts/harry-potter-and-the-half-blood-prince/</link><pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate><guid>https://ufxpri.github.io/posts/harry-potter-and-the-half-blood-prince/</guid><description>&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Number&lt;/th&gt;
+ &lt;th&gt;Title&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;Year&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;Harry Potter and the Philosopher’s Stone&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;2001&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;Harry Potter and the Chamber of Secrets&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;2002&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Harry Potter and the Prisoner of Azkaban&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;2004&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href="https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md"&gt;View raw (TEST.md)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;This is a paragraph.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id="header-1"&gt;Header 1&lt;/h1&gt;
+&lt;h2 id="header-2"&gt;Header 2&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;Header 1
+========
+
+Header 2
+--------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id="header-1-1"&gt;Header 1&lt;/h1&gt;
+&lt;h2 id="header-2-1"&gt;Header 2&lt;/h2&gt;
+&lt;h3 id="header-3"&gt;Header 3&lt;/h3&gt;
+&lt;h4 id="header-4"&gt;Header 4&lt;/h4&gt;
+&lt;h5 id="header-5"&gt;Header 5&lt;/h5&gt;
+&lt;h6 id="header-6"&gt;Header 6&lt;/h6&gt;
+&lt;pre&gt;&lt;code&gt;# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id="header-1-2"&gt;Header 1&lt;/h1&gt;
+&lt;h2 id="header-2-2"&gt;Header 2&lt;/h2&gt;
+&lt;h3 id="header-3-1"&gt;Header 3&lt;/h3&gt;
+&lt;h4 id="header-4-1"&gt;Header 4&lt;/h4&gt;
+&lt;h5 id="header-5-1"&gt;Header 5&lt;/h5&gt;
+&lt;h6 id="header-6-1"&gt;Header 6&lt;/h6&gt;
+&lt;pre&gt;&lt;code&gt;# Header 1 #
+## Header 2 ##
+### Header 3 ###
+#### Header 4 ####
+##### Header 5 #####
+###### Header 6 ######
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;</description></item><item><title/><link>https://ufxpri.github.io/posts/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ufxpri.github.io/posts/resume/</guid><description>&lt;h1 id="이력서-준비"&gt;이력서 준비&lt;/h1&gt;
+&lt;h1 id="나의-개발-스택"&gt;나의 개발 스택&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;네트워크 : ⭐⭐⭐⭐ (고등학교 전공)&lt;/li&gt;
+&lt;li&gt;아키텍트 : ⭐⭐⭐&lt;/li&gt;
+&lt;li&gt;백엔드 : ⭐⭐⭐⭐&lt;/li&gt;
+&lt;li&gt;프로잭트매니징 : ⭐⭐⭐&lt;/li&gt;
+&lt;li&gt;기획 : ⭐⭐&lt;/li&gt;
+&lt;li&gt;디자인 : ⭐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="나의-키워드"&gt;나의 키워드&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;python 백엔드&lt;/li&gt;
+&lt;li&gt;API 설계자&lt;/li&gt;
+&lt;li&gt;분산컴퓨팅&lt;/li&gt;
+&lt;li&gt;MSA&lt;/li&gt;
+&lt;li&gt;비디오 스트리밍&lt;/li&gt;
+&lt;li&gt;실시간 프로세싱&lt;/li&gt;
+&lt;li&gt;베어메탈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="내가-해결하고자-하는것"&gt;내가 해결하고자 하는것&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="자기소개"&gt;자기소개&lt;/h1&gt;
+&lt;p&gt;3년차 python 백엔드 개발자로써 스타트업 초기맴버로 B2B 를 위한 API 설계/개발/운영/유지보수 를 담당하공 있습니다. 회사가 사원수 13명으로 발전해가면서 유일한 백엔드 개발자로써 회사의 성장에 기여하였고 필요할때는 프로젝트매니저 및 테크리더 역할도 수행하였습니다.&lt;/p&gt;</description></item></channel></rss>

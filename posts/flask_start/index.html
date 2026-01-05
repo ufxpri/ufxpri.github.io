@@ -1,0 +1,15 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>flask 로 메모장 서비스 만들기 | Minimal Blog</title><meta name=description content="Typography driven, feature-rich blogging theme with minimal aesthetics"><link rel=stylesheet href=/css/style.css></head><body><header class=site-header><nav class=nav><a href=/ class=site-title>Minimal Blog</a><ul class=nav-menu><li><a href=/posts/>Blog</a></li><li><a href=/about/>About</a></li><li><a href=/tags/>Tags</a></li></ul></nav></header><main><div class=container><article class=post><header><h1>flask 로 메모장 서비스 만들기</h1><time datetime=2020-06-21>June 21, 2020</time></header><div class=content><h1 id=flask로-만드는-메모장-서비스>flask로 만드는 메모장 서비스</h1><p>flask 로 메모장을 만드는 프로젝트를 할겁니다.</p><p>만들기 전에 이 가이드 에서는 다음 항목을 다룹니다.</p><ul><li>flask<ul><li>flask 는 무엇인가</li><li>flask 기본 사용방법</li><li>flask 의 기능 종류</li></ul></li><li>http<ul><li>http의 동작방식</li><li>사용자 요청 처리하기</li><li>서비스 설계하기</li></ul></li></ul><h1 id=프로젝트-설계>프로젝트 설계</h1><p>본격적으로 flask 를 사용하기에 앞서 우리가 만들것이 무엇인지 설계해봅시다.
+메모장 서비스에는 다음과 같은 기능이 필요합니다.</p><ul><li>사용자 관리하기<ul><li>회원가입</li><li>로그인</li><li>인증</li><li>로그아웃</li></ul></li><li>메모 관리하기<ul><li>메모 생성</li><li>메모 열랍</li><li>메모 수정</li><li>메모 삭제</li></ul></li></ul><p>그리고 우리가 만들 페이지는 다음과 같습니다.</p><ul><li>회원가입 페이지</li><li>로그인 페이지</li><li>메모 목록 페이지<ul><li>사용자의 메모 목록 표시, 수정, 삭제 의 기능을 수행할 수 있음</li></ul></li><li>메모 열람 페이지<ul><li>선택한 메모의 세부내용, 수정, 삭제 의 기능을 수행할 수 있음</li></ul></li><li>메모 수정 페이지<ul><li>메모 수정(생성)내용 을 제출할 수 있음</li></ul></li></ul><h1 id=flask-사용하기>flask 사용하기</h1><p>웹은 생각보다 단순한 원칙 위에 설계되어있습니다. &ldquo;요청&rdquo; 과 &ldquo;응답&rdquo; 으로 모든 통신이 이루어 집니다. flask 는 이 구조에서 &ldquo;요청&rdquo; 을 처리해줍니다. 프로그래머는 일련의 처리 과정만 코딩해주면 바로 서비스 될 수 있도록 말이죠</p><p>그럼 요청에는 무슨 종류가 있을까요?
+일단 요청은 다음과 같이 생겼습니다.
+(대충 http 프로토콜 구조 짤)</p><p>이러한 요청을 큰 유형으로 나누면
+(대충 각 유형마다 구성된 내용)</p><p>으로 각각의 사용 용도를 가지고 있습니다.</p><h1 id=기본-폴더-구성하기>기본 폴더 구성하기</h1><p>프로젝트를 처음 시작할때 직접 파일 구조를 설계할 수 있습니다.
+이 가이드에서는 공식가이드에서 사용하고 있는 프레임을 일부 차용하겠습니다.
+(대충 파일트리짤)(그리고 원본링크)</p><h1 id=메인-코드-작성하기>메인 코드 작성하기</h1><p>프로그램이 시작되는 부분을 작성하겠습니다.
+메인코드에서는 프로젝트가 실행될때 개발환경인지 배포환경인지를 설정하는 작업과 초기화작업 마지막으로 사용자 요청에 대해 처리하는 함수를 할당해줍니다.
+(대충 코드가 있는 부분)</p><h1 id=메모-관리-클래스-만들기>메모 관리 클래스 만들기</h1><p>메모를 관리할 수 있는 클래스를 만들어 관리할 것 입니다.
+데이터베이스 사용에 대해서는 이 가이드에 포함시키지 않을것 이기 때문에 json 파일로 save & load 하는 방식으로 설계할 것 입니다.
+(대충 메모장 관리 코드)</p><h1 id=ui-만들기>UI 만들기</h1><p>UI 는 구현에 필요한 가장 기본적인 요소들로만 구성할 것 입니다.
+flask 에서 채용하고 있는 jinja2 를 사용합니다. jinja2 는 python 문법과 비슷하에 UI 를 만들 수 있는데요 for 문과 if 문 등을 사용하여 반복적인 UI 를 만들 수 있습니다.
+기본적인 사용방법은 다음과 같습니다.
+(대충 브라켓 % # none 마다 가진 역할 설명)
+(대충 위를 사용한 코드샘플)</p><p>html 을 이용하여 만들 것 이고 js 를 통해 메모를 관리할 것 이다.</p></div></article></div></main><footer class=site-footer><p>&copy; 2026 Your Name. Built with <a href=https://gohugo.io/ target=_blank>Hugo</a>.</p></footer></body></html>
